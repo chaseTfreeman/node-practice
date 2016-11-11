@@ -59,9 +59,15 @@
 //  // an additional empty object literal called prop2 is also added to the C object.
 
 // ********IIFEs
-(function(){
-  var firstName = 'John';
-  console.log(firstName);
-}());
-var firstName = 'Jane';
-console.log(firstName);
+// (function(){
+//   var firstName = 'John';
+//   console.log(firstName);
+// }());
+// var firstName = 'Jane';
+// console.log(firstName);
+
+//Practice using require for modules (after a deep walkthrough of V8)
+var greetings = require('./greetings');
+
+greetings.english();
+greetings.spanish();
